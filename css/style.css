@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: black;
+  font-size: 55px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+  color: grey;
+  text-align: center;
+}
+
+.blog {
+    font-size: 24px;
+    color: white;
+}
+
+span {
+  color: rgb(243, 243, 80)
+}
+p {
+  font-size: 30px;
+  text-align: justify;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.ruzana-bac {
+  width: 100%;
+  border-top: 40px;
+  border-bottom: 40px;
+  border-right: 28px;
+  border-left: 28px;
+  padding: 20px;
+  display: block;
+}
+
+.pmo {
+  border-top: -140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px;
+}
+
+figcaption {
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  color: rgb(15, 15, 15);
+  border: 1px solid rgb(6, 6, 6);
+  padding: 8px 2px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  font-weight: bold;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+  border-radius: 35px;
+}
+.card {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  font-size: 40px;
+  padding: 10px;
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  padding-inline: 4rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  color: red;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav a:hover,
+a:active {
+  background-color: wheat;
+  border-radius: 5px;
+}
+
+.rank-button  {
+  color: white;
+  background-color: red;
+  border: none;
+  height: 46px;
+  width: 170px;
+  border-radius: 23px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin:20px 20px;
+  transition: opacity 0.15s;
+}
+
+.rank-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+  opacity: 0.8;
+}
+
+main {
+  padding: 40px;
+  display: flex;
+  gap: 1rem;
+}
+
+#content {
+  flex: 4;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem 2rem;
+}
+
+aside {
+  flex: 2;
+}
+
+.about {
+  font-size: 24px;
+}
+
+.nama {
+  font-size: 24px;
+}
+
+.profil, .email-rizqi {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+footer {
+  display: flex;
+  padding: 20px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  justify-content: center;
+  font-size: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {  
+  nav ul {
+    justify-content: center;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  main aside {
+    align-self: stretch;
+  }
+  .card {
+    width: 100%;
+  }
+  h2 {
+    font-size: 50%;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 32px;
+  }
+  form {
+    height: 100%;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
